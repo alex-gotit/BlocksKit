@@ -49,6 +49,7 @@ Pod::Spec.new do |s|
     ss.dependency 'BlocksKit/Core'
     ss.dependency 'BlocksKit/DynamicDelegate'
     ss.platform = :ios
+    ss.exclude_files = 'BlocksKit/UIKit/UIWebView+BlocksKit.{h,m}'
     ss.source_files = 'BlocksKit/BlocksKit+UIKit.h', 'BlocksKit/UIKit/*.{h,m}'
   end
 end
